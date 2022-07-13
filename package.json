@@ -1,0 +1,42 @@
+{
+  "name": "babel-preset-kdu",
+  "version": "1.2.1-alpha.0",
+  "description": "Babel preset for all Kdu plugins.",
+  "license": "MIT",
+  "repository": "khanhduy1407/babel-preset-kdu",
+  "author": {
+    "name": "NKDuy",
+    "email": "kn145660@gmail.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "dist/babel-preset-kdu.common.js",
+  "unpkg": "dist/babel-preset-kdu.js",
+  "cdn": "dist/babel-preset-kdu.js",
+  "scripts": {
+    "test": "echo lol",
+    "prepublish": "npm run build",
+    "build": "bili index.js --format umd,cjs --compress umd --module-name PresetKdu"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "babel",
+    "kdu",
+    "jsx",
+    "preset"
+  ],
+  "dependencies": {
+    "babel-helper-kdu-jsx-merge-props": "^2.0.2",
+    "babel-plugin-jsx-event-modifiers": "^2.0.2",
+    "babel-plugin-jsx-k-model": "^2.0.1-alpha.0",
+    "babel-plugin-jsx-kdu-functional": "^2.1.0-alpha.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-kdu-jsx": "^3.4.3-alpha.0"
+  },
+  "devDependencies": {
+    "bili": "^0.17.2"
+  }
+}
